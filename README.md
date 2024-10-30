@@ -14,6 +14,10 @@
   <p align="center">Home Page</p>
 </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ecf81b (My_Changes)
 # Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
 
 ### **Phase 1: Initial Setup and Deployment**
@@ -29,7 +33,11 @@
 - Clone your application's code repository onto the EC2 instance:
     
     ```bash
+<<<<<<< HEAD
     git clone https://github.com/ramesh1918s/DevSecOps_Project_Netflix.git 
+=======
+    git clone https://github.com/ramesh1918s/DevSecOps_Project_Netflix.git
+>>>>>>> 6ecf81b (My_Changes)
     ```
     
 
@@ -286,7 +294,11 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
+<<<<<<< HEAD
                 git branch: 'main', url: 'https://github.com/ramesh1918s/DevSecOps_Project_Netflix.gitt'
+=======
+                git branch: 'main', url: 'https://github.com/ramesh1918s/DevSecOps_Project_Netflix.git'
+>>>>>>> 6ecf81b (My_Changes)
             }
         }
         stage("Sonarqube Analysis "){
