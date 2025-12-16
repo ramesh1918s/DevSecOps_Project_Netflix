@@ -1,0 +1,19 @@
+this is test file
+
+
+
+first  git log used case 
+
+- git log 
+
+
+showing commands ids 
+
+select which commands we whant
+
+- git reset --hard <command-id>
+
+go to that commands changes
+
+
+
