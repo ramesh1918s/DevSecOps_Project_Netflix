@@ -103,6 +103,87 @@ git push origin main
 Local:
 git branch -d feature-test-changes
 
+
+
+-----------------------------------
+
+Main branch ki switch avvu
+git checkout main
+
+2️⃣ Latest main code pull cheyyi (important)
+git pull origin main
+
+3️⃣ Feature branch ni main lo merge cheyyi
+git merge feature-test-changes
+
+
+👉 Conflicts vaste:
+
+test.txt open cheyyi
+
+conflicts resolve cheyyi
+
+git add test.txt
+git commit -m "Resolved merge conflict"
+
+4️⃣ Ippudu main branch ni remote ki push cheyyi
+git push origin main
+
+
+✅ Now feature changes main lo ki vellipothayi
+
+🗑️ Feature branch delete cheyyadam
+5️⃣ Local feature branch delete
+git branch -d feature-test-changes
+
+6️⃣ Remote feature branch delete (important)
+git push origin --delete feature-test-changes
+
+🔍 Verify cheyyali ante
+git branch
+
+
+👉 feature-test-changes undakudadhu
+
+git log --oneline --graph --all
+
+
+👉 Feature commit main lo kanipistundi
+
+🧠 Remember Rule (Very Important)
+
+Push eppudu chestamo → current branch ni push chestam
+
+feature branch lo:
+
+git push origin feature-test-changes
+
+
+main branch lo:
+
+git push origin main
+
+🎯 Final Flow (100% correct)
+feature → commit → checkout main → merge → push → delete feature
+
+
+
+
+
+
+
+--------------------------------
+
+
+
+
+
+
+
+
+
+
+
 Remote:
 git push origin --delete feature-test-changes
 
