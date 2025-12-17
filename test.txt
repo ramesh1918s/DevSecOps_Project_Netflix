@@ -16,4 +16,21 @@ select which commands we whant
 go to that commands changes
 
 
+this git diff showing the difference in where file
 
+
+adding branching 
+
+- changes the branching
+
+- git checkout -b feature
+
+create and change the branch
+
+- only create a branch 
+
+- git branch ram
+
+
+
+this was main changes in feature its correct and chnages it and push the main branch
