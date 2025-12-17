@@ -34,3 +34,86 @@ create and change the branch
 
 
 this was main changes in feature its correct and chnages it and push the main branch
+
+
+
+--------------------------feature branch changes into main --------
+
+
+Main branch ki vellu & latest code teesuko
+git checkout main
+git pull origin main
+
+2️⃣ Feature branch create chesi switch avvu
+git checkout -b feature-test-changes
+
+
+👉 Ippudu nuvvu feature branch lo unnav
+
+Check:
+
+git branch
+
+3️⃣ test.txt file lo changes cheyyi
+notepad test.txt
+
+
+(or)
+
+code test.txt
+
+
+✍️ Changes cheyyi → Save
+
+4️⃣ Changes stage cheyyi
+git add test.txt
+
+
+(anni files ante)
+
+git add .
+
+5️⃣ Commit cheyyi
+git commit -m "Updated test.txt with required changes"
+
+6️⃣ Feature branch ni remote ki push cheyyi
+git push origin feature-test-changes
+
+7️⃣ Main branch ki velli merge cheyyi
+git checkout main
+git pull origin main
+
+git merge feature-test-changes
+
+8️⃣ Conflicts vaste (optional)
+
+test.txt open cheyyi
+
+conflict markers remove cheyyi
+
+correct content save cheyyi
+
+git add test.txt
+git commit -m "Resolved merge conflict"
+
+9️⃣ Main branch ni remote repo ki push cheyyi
+git push origin main
+
+10️⃣ (Optional) Feature branch delete cheyyi
+Local:
+git branch -d feature-test-changes
+
+Remote:
+git push origin --delete feature-test-changes
+
+🧠 One-line Flow (remember this)
+main → feature → changes → commit → merge → push
+
+⚠️ Common Mistakes (avoid cheyyi)
+
+❌ main lo direct changes
+❌ merge before pull
+❌ MERGING state ignore cheyyadam
+
+✅ Final Verify
+git log --oneline --graph --all
